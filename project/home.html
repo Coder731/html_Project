@@ -1,0 +1,53 @@
+<!--A HTML combining some of the elements learned in HTML so far.-->
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>
+            home
+        </title>
+    </head>
+    <body>
+        <!--<div> 1 has: <h1> and first <h2> with lists (collapsed):-->
+        <div>
+            <h1>home.html</h1>
+                <!--Nested Unordered Lists:-->
+                        <h2></h2>
+                            <ul><h3>Pages:</h3>
+                                <ul>(home.html file) Sections:<br><br>
+                                        <ul>Links (on home page) :<br><br>
+                                            <!--Next line: using x, defined at start of body, as a link-->
+                                            <!--Next line Not working-->
+                                            <ul><Span><a id="link" target="_blank">experiment</a></Span><br><br></ul>
+                                            <script language="javascript" type="text/javascript">
+                                                (function() {
+                                                    var strLink = "https://www.youtube.com/";
+                                                    document.getElementById("link").setAttribute("href",strLink);
+                                                })();
+                                            </script>
+                                            <!--Redo first line:-->
+                                            <ul><Span><a href= x target="_blank">wasYouTube</a></Span><br><br></ul>
+                                            <ul><Span><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a></Span><br><br></ul>
+                                            <ul><Span><a href="https://bitnami.com/stack/xampp?utm_source=bitnami&utm_medium=installer&utm_campaign=XAMPP%2BInstaller" target="_blank">bitnami</a></Span><br><br></ul>
+                                            <ul><Span><a href="https://www.w3schools.com/tags/att_input_type_search.asp" target="_blank">w3schools_search_BOX_only</a></Span><br><br></ul>
+                                            <ul><Span><a href="https://github.com/Coder731/html_own__project" target="_blank">github Coder731 html_own__project</a></Span><br><br></ul>
+                                            <ul><Span><a href="https://developpaper.com/how-to-open-the-settings-file-vscode-is-opened-and-configured-settings-json-tips-for-documentation/" target="_blank">settings</a></Span><br><br></ul>
+                                            
+                                        </ul>
+                                </ul>
+        </div>
+
+        <!--<div> 2 has: Second <h2>Folders:-->
+        <div>
+            <h2>Section 2: Folders:</h2>
+                <ul><h3>project</h3>
+                    <ul><Span><a href="folders" target="_blank">folders</a></Span><br><br>
+                        <ul><Span><a href="folders/php" target="_blank">php</a></Span></ul>
+                    </ul>
+                </ul>
+        </div>
+        <!-- div 3-->
+        <div>
+            <h2>Section 3: home2.html</h2><br>
+        </div>
+    </body>
+</html>
