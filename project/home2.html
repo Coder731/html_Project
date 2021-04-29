@@ -24,19 +24,9 @@
         <ul><Span><a href="https://www.w3schools.com/jsref/prop_win_name.asp" target="code source">w3schools window object</a></Span><br><br></ul></ul>
 
 
-        <!--2 Open New Window, set Window name-->
-        <!--button1-->
-        <button onclick="myFunction()">button1</button>
-        <!--this <script> element sets external window name to myWindowName using window.name-->
-            <!-- currently overridden by script under comment 3 below.-->
-        <script>
-        function myFunction() {
-        var myWindow = window.open("", "MsgWindow", "width=200,height=100");
-        myWindow.document.write("<p>This window's name is: " + myWindow.name + "</p>");
-        }
-        </script>
 
-        <!--3 Set current window name-->
+
+        <!--2 Set current window name-->
         <!--button2-->
         <button onclick="myFunction()">button2</button>
         <p id="demo"></p>
