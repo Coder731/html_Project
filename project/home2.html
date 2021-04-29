@@ -16,14 +16,15 @@
         <ul><h2>Section 2: Webpages List:</h2></ul>
             <ul><Span><a href="home.html" target="home2">home.html</a></Span><br><br></ul></ul>
         <!--Get Window Name Section-->
+        <!--1 Attempt to get current window name.  ToDo: display value of myWindow-->
         <script>
         var myWindow = window.name
         myWindow.document.write("<p>Window name is: " + myWindow.name + "</p>");
         </script>
         <ul><Span><a href="https://www.w3schools.com/jsref/prop_win_name.asp" target="code source">w3schools window object</a></Span><br><br></ul></ul>
 
-        <p>Click the button to create a window and then display the name of the new window.</p>
 
+        <!--2 Open New Window, set Window name-->
         <button onclick="myFunction()">Try it</button>
 
         <script>
@@ -32,6 +33,20 @@
         myWindow.document.write("<p>This window's name is: " + myWindow.name + "</p>");
         }
         </script>
+
+        <!--3 Set current window name-->
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+        window.name = "myWindowName";
+        var x = "This window's name is now: " + window.name;
+        document.getElementById("demo").innerHTML = x;
+        }
+        </script>
+
 
 </body>
 </html>
