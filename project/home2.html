@@ -25,8 +25,10 @@
 
 
         <!--2 Open New Window, set Window name-->
-        <button onclick="myFunction()">Try it1</button>
-
+        <!--button1-->
+        <button onclick="myFunction()">button1</button>
+        <!--this <script> element sets external window name to myWindowName using window.name-->
+            <!-- currently overridden by script under comment 3 below.-->
         <script>
         function myFunction() {
         var myWindow = window.open("", "MsgWindow", "width=200,height=100");
@@ -35,10 +37,10 @@
         </script>
 
         <!--3 Set current window name-->
-        <button onclick="myFunction()">Try it2</button>
-
+        <!--button2-->
+        <button onclick="myFunction()">button2</button>
         <p id="demo"></p>
-
+        <!-- this <script> element sets current window name to myWindowName using window.name-->
         <script>
         function myFunction() {
         window.name = "myWindowName";
@@ -46,7 +48,7 @@
         document.getElementById("demo").innerHTML = x;
         }
         </script>
-
+    
 
 </body>
 </html>
