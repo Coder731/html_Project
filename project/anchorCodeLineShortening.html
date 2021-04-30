@@ -1,0 +1,36 @@
+<!--A HTML combining some of the elements learned in HTML so far.-->
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>
+            shortening
+        </title>
+    </head>
+    <body>
+        <!--<div> 1 has: <h1> and first <h2> with lists (collapsed):-->
+        <div>
+            <h1>shortening</h1>
+                <!--Nested Unordered Lists:-->
+                        <h2></h2>
+                            <ul><h3>Pages:</h3>
+                                <ul>Sections:<br><br>
+                                        <ul>Links:<br><br>
+                                    <!--This div contains anchors with id attribute pointing to numbered variables "link##" pointing to long link strings in next div (javascript)-->
+                                    <div>
+                                    <ul><Span><a id="link" target="_self">YouTube</a></Span><br><br></ul>
+                                    </div>
+                                    <!--This div has javascript allowing long links to be stored outside of the anchor for code readability.-->
+                                    <div>
+                                        <script language="javascript" type="text/javascript">
+                                            (function() {
+                                                var strLink = "https://www.youtube.com/";
+                                                document.getElementById("link").setAttribute("href",strLink);
+                                            })();
+                                        </script>
+                                    </div>
+                                    </ul>
+                                </ul>
+                            </ul>
+        </div>
+    </body>
+</html>
