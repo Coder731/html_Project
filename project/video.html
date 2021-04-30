@@ -1,0 +1,40 @@
+<!--A HTML combining some of the elements learned in HTML so far.-->
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <title>
+            home
+        </title>
+    </head>
+    <body>
+        <div><h1>home</h1>
+            <!--Batch of site map links to the four pages on website:-->
+            <h2>Section 1: sitemap:</h2>
+            <h3><ul><Span><a href="home.html" target="_self">home</a></h3></Span></ul></h3>
+            <h3><ul><Span><a href="links.html" target="_self">links</a></h3></Span></ul>
+            <h3><ul><Span><a href="php.html" target="_self">php</a></h3></Span></ul>
+            <h3><ul><Span><a href="References.html" target="_self">References</a></h3></Span></ul>
+            <h3><ul><Span><a href="finance.html" target="_self">finance</a></h3></Span></ul>
+            <h3><ul><Span><a href="slider.html" target="_self">slider</a></h3></Span></ul>
+            <h3><ul><Span><a href="slider2.html" target="_self">slider2</a></h3></Span></ul>
+
+        </div>
+        <!--<div> 2 has: embedded YouTube videos:-->
+        <div>    
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rWWvZnWu6q0?start=393" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tSL8ITGre4o?start=64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/l0vD_FBWk0g?start=77" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oDHZHEi5ujs?start=590" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7O9vrlTlPfk?start=3141" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oCSDfpeTkcU?start=1796" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div><h2>Section 2: slider</h2></div>
+            <input type="range" min="0.1" max="3.0" step="0.1" value="1.0" id="scale">Scale:<text id="spanscale" style="inline">2.6</text>
+                <script type="text/javascript">
+                    document.getElementById("scale").oninput = function() {
+                    document.getElementById("spanscale").innerHTML = this.value;
+                    }
+                </script>
+        <div class="as-console-wrapper"><div class="as-console"></div></div>
+    </body>
+</html>
