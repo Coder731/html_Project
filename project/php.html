@@ -2,14 +2,32 @@
 <html lang = "en-US">
     <head>
         <title>
-            MyHTML>php stuff
+            php stuff
         </title>
     </head>
-                        <body>
-                            <h1>MyHTML>php stuff</h1>
-                            <Span>
-                                <a href="https://i.stack.imgur.com/7jtM7.png" target="_blank">php_Path</a>
-                            </Span>
-                            <br><br>
-                            
-                        </body>
+        <body>
+            <h1>php stuff</h1>
+            <!--old format (unshortened anchor with href instead of id attribute)-->
+            <Span>
+                <a href="https://i.stack.imgur.com/7jtM7.png" target="_blank">php_Path</a>
+            </Span>
+            <br><br>
+            <!--<div> for shortened anchors referring to Script <div> below 
+                by using "link##" variables (using "id" attribute instead of "href" in anchor):-->
+            <ul><Span><a id="link9" target="_self">Compiling php 8 from source with JIT</a></Span><br><br></ul>
+            <ul><Span><a id="link10" target="_self">php8 JIT</a></Span><br><br></ul>
+            <!--Script <div> for shortening anchors above by including long weblink addresses 
+                on separate line below and crosslinking using "link##" variables:-->
+            <div>
+                <script>
+                    (function() {
+                        var strLink9 = "https://arkadiuszkondas.com/compiling-php-8-from-source-with-jit-support/";
+                        document.getElementById("link9").setAttribute("href",strLink9);
+                    })();
+                    (function() {
+                        var strLink10 = "https://blog.krakjoe.ninja/2019/03/php-gr8.html";
+                        document.getElementById("link10").setAttribute("href",strLink10);
+                    })();
+                </script>
+            </div>
+        </body>
