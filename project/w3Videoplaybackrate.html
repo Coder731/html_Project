@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<div><!--works brings up video from YouTube-->
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oCSDfpeTkcU?start=4190" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<button onclick="getPlaySpeed()" type="button">current playbackRate</button>
+<button onclick="setPlaySpeed()" type="button">Set video to be play in slow motion</button>
+
+<script>
+var vid = document.getElementsByClassName("video-stream html5-main-video")[0];/* [0] before ;*/
+
+console.log("hello");
+
+
+function getPlaySpeed() { 
+  alert(vid.playbackRate);
+} 
+
+function setPlaySpeed() { 
+  vid.playbackRate = 0.5;
+} 
+console.log("hello2");
+</script> 
+
+<h2>References:</h2>
+<a href="https://www.w3schools.com/jsref/prop_video_playbackrate.asp" target="_self">Video playbackRate Property</a>
+
+</body> 
+</html>
